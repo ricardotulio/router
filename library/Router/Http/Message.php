@@ -7,6 +7,8 @@ use Psr\Http\Message\StreamInterface;
 
 class Message implements MessageInterface
 {
+    protected $body;
+
     public function getProtocolVersion()
     {}
 
@@ -35,8 +37,13 @@ class Message implements MessageInterface
     {}
 
     public function getBody()
-    {}
+    {
+        return $this->body;
+    }
 
     public function withBody(StreamInterface $body)
-    {}
+    {
+        $this->body = $body;
+        return $body;
+    }
 }
