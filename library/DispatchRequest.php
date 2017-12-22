@@ -24,7 +24,7 @@ function dispatch_request($routes, $request = null) {
 
         $callback = prop('callback', find($requestedRoute, $routes));
 
-        return $callback($request, new \Router\Http\Response());
+        return $callback($request, build_response());
     };
 
     return func_num_args() < 2 ? $checker : $checker($request);

@@ -23,7 +23,8 @@
             "Router\\": "library/"
         },
         "files": [
-            "library/DispatchRequest.php"
+            "library/DispatchRequest.php",
+            "library/BuildResponse.php"
         ]
     },
     "autoload-dev": {
