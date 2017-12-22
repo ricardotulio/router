@@ -20,20 +20,20 @@
     },
     "autoload": {
         "psr-4": {
-            "Router\\": "library/"
+            "Router\\": "library/Router/"
         },
         "files": [
-            "library/DispatchRequest.php",
-            "library/BuildRequest.php",
-            "library/BuildResponse.php",
-            "library/BuildRoute.php",
-            "library/AddRoute.php",
-            "library/Router.php"
+            "library/Router/DispatchRequest.php",
+            "library/Router/BuildRequest.php",
+            "library/Router/BuildResponse.php",
+            "library/Router/BuildRoute.php",
+            "library/Router/AddRoute.php",
+            "library/Router/Router.php"
         ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Router\\": "tests/"
+            "Router\\": "tests/Router/"
         }
     }
 }
