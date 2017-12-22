@@ -6,15 +6,26 @@ use PHPUnit\Framework\TestCase;
 
 class BuildRouteTest extends TestCase
 {
+    public function validRoutesDataProvider()
+    {
+        return [
+            [
+                'path' => '/teste',
+                'method' => 'GET',
+                'callback' => function() {}
+            ]
+        ];
+    }
+
     /**
      * @test
+     * @dataProvider validRoutesDataProvider
      */
-    public function mustBuildRoute()
-    {
-        $path = '/test';
-        $method = 'GET';
-        $callback = function() {};
-
+    public function mustBuildRoute(
+        $path,
+        $method,
+        $callback
+    ) {
         $expectedRoute = (object) [
             'path' => $path,
             'method' => $method,
