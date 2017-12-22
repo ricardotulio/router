@@ -12,9 +12,9 @@ use function Garp\Functional\{
 };
 
 function dispatch_request($routes, $request = null) {
-    $checker = function(ServerRequestInterface $request) 
+    $checker = function(ServerRequestInterface $request)
         use ($routes): ResponseInterface {
-        $requestedMethod = prop_equals('method', 'GET');
+        $requestedMethod = prop_equals('method', $request->getMethod());
         $requestedTarget = prop_equals(
             'path',
             $request->getRequestTarget()
