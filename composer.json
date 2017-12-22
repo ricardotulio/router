@@ -24,9 +24,11 @@
         },
         "files": [
             "library/DispatchRequest.php",
+            "library/BuildRequest.php",
             "library/BuildResponse.php",
             "library/BuildRoute.php",
-            "library/AddRoute.php"
+            "library/AddRoute.php",
+            "library/Router.php"
         ]
     },
     "autoload-dev": {
