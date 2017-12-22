@@ -10,9 +10,25 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "psr/http-message": "^1.0",
+        "grrr-amsterdam/garp-functional": "^1.0"
+    },
     "require-dev": {
         "phpunit/phpunit": "^6.5",
         "satooshi/php-coveralls": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Router\\": "library/"
+        },
+        "files": [
+            "library/DispatchRequest.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Router\\": "tests/"
+        }
     }
 }
