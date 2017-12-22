@@ -24,7 +24,8 @@
         },
         "files": [
             "library/DispatchRequest.php",
-            "library/BuildResponse.php"
+            "library/BuildResponse.php",
+            "library/BuildRoute.php"
         ]
     },
     "autoload-dev": {
