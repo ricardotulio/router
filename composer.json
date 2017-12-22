@@ -25,7 +25,8 @@
         "files": [
             "library/DispatchRequest.php",
             "library/BuildResponse.php",
-            "library/BuildRoute.php"
+            "library/BuildRoute.php",
+            "library/AddRoute.php"
         ]
     },
     "autoload-dev": {
